@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="Images/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+
+    <title>Log in page </title>
+</head>
+
+<body>
+    <!-- Header and Landing page -->
+    <header class="header">
+        <div class="navbar flex-nav">
+            <div class="logo-heading">
+                <div class="img-logo-heading"> <img src="Images/logo.jpeg" alt="Image of logo" class="logo-style">
+                    <h1>NIMSA JOURNALS</h1>
+                </div>
+                <div class="hamburger-nav">
+                    <span class="hamburger-icon" id="hamburger-icon" onclick="toggleVerticalbar()">
+                        <i class="fa fa-bars fa-2x" aria-hidden="true" class="icons"></i>
+                    </span>
+                </div>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li class="nav-list"><a href="index.html" class="nav-link home-link">Home</a></li>
+                    <li class="nav-list"><a href="searchpage.html" class="nav-link search-link">Search</a></li>
+                    <li class="nav-list"><a href="publishpaper.html" class="nav-link publish-paper-link">Publish
+                            Paper</a></li>
+                    <li class="nav-list"><a href="#" class="nav-link editorials-link">Editorials</a></li>
+
+                    <li class="nav-login nav-list"><a href="login.html" class="nav-link log-in-link">Log in</a></li>
+                    <li class="nav-signup nav-list"><a href="signup.html" class="btn-5 sign-up-link">Sign
+                            up</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <section class="flex-login">
+            <div class="row">
+
+                <div class="column-1">
+
+                    <h4 class="form-heading">Welcome Back</h4>
+                    <div class="form-container">
+                        <form action="">
+                            <h1 class="login-heading">Log in</h1>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                            <input type="text" name="password" id="password" placeholder="Password">
+                            <input type="submit" value="Log in" id="submit">
+                            <span class="forgotten-password">Forgotten password, click here to <a href=""
+                                    class="reset">Reset</a></span>
+                        </form>
+                    </div>
+
+
+                </div>
+
+                <div class="column-2">
+                    <img src="Images/landing-page-img.png" alt="Landing page image" class="img1-style">
+                </div>
+
+            </div>
+        </section>
+    </header>
+    <footer class="footer">
+        <div class="flex-footer">
+            <div class="footer-item">
+                <p class="footer-p1 icon">Follow us:</p>
+                <p class="footer-p"><a href="https://www.instagram.com/p/CPdd20ppIxH/?utm_medium=copy_link" class="icon"><i class="fab fa-instagram social"></i></a></p>
+                <p class="footer-p"><a href="https://www.twitter.com/NiMSA_Nigeria" class="icon"><i class="fab fa-twitter social"></i></a></p>
+            </div>
+        </div>
+        <p class="team-heading">&copy; 2021 NIMSA JOURNALS. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
