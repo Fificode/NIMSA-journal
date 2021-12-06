@@ -184,7 +184,7 @@ border-radius: 5px;}
     width: 98%;
     background-color: #fff;
     color: #000;
-    margin: 20px 5px 0 0;
+    margin: 25px 5px 0 0;
     font-size: 15px;
   
 }
@@ -231,7 +231,7 @@ border-radius: 5px;}
     }
      .column-1 p{
 margin-bottom: 25px;
-font-size: 15px;
+font-size: 18px;
     }
    
     .flex-row-one .row .column-2{
@@ -258,7 +258,7 @@ font-size: 15px;
 
 .flex-items1 p{
     margin-bottom: 35px;
-    font-size: 15px;
+    font-size: 18px;
 }
     /* Third section */
 .flex-row-three .row{
@@ -276,7 +276,7 @@ font-size: 15px;
 }
 .flex-items2 p{
     margin-bottom: 35px;
-    font-size: 15px;
+    font-size: 18px;
 }
 .search-icon{
     color:#228B22;
@@ -557,11 +557,16 @@ flex-direction: column;
 }
 
 /* Publish paper */
+#search{
+    padding-right: -30%;
+}
 .search-section{
     margin: 90px 5px 10px 5px;
 }
+
 .search-section .section-two{
     margin: -26px 0 0 170px;
+    
 }
 .field{
     font-size: 13px;
@@ -776,7 +781,7 @@ width: 100%;
    
 }
 .field-of-research{
-    margin: 0px 5px 10px 5px;
+    margin: 0px 5px 15px 5px;
     color: #228B22;
     font-weight: bold;
     font-size: 15px;
@@ -811,7 +816,7 @@ width: 100%;
     padding: 5px;
     width: 100%;
     border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 8px;
 }
 #field-of-research:focus{
     outline-color: #228B22;
@@ -833,6 +838,7 @@ width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .plus-square-icon{
