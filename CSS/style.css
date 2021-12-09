@@ -229,11 +229,13 @@ border-radius: 5px;}
         margin: 100px 10px 30px 10px;
         width: 100%;
     }
-     .column-1 p{
+   .flex-row-one  .column-1 p{
 margin-bottom: 25px;
-font-size: 18px;
+font-size: 17px;
     }
-   
+   .flex-row-one .column-1 p a{
+       font-size: 15px;
+   }
     .flex-row-one .row .column-2{
         display: none;
     }
@@ -276,7 +278,10 @@ font-size: 18px;
 }
 .flex-items2 p{
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 17px;
+}
+.flex-items2 p a {
+    font-size: 15px;
 }
 .search-icon{
     color:#228B22;
@@ -557,10 +562,7 @@ flex-direction: column;
 }
 
 /* Publish paper */
-#search{
-    
-    padding-right: 150px;
-}
+
 .search-section{
     margin: 90px 5px 10px 5px;
 }
@@ -595,7 +597,7 @@ margin-right: 15px;
 #search{
     border: 1px solid #555;
     border-radius: 3px;
-padding: 5px;
+padding:5px 200px 5px 5px;
     width: 98%;
 }
 #search:focus{
