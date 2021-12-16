@@ -89,13 +89,13 @@ const submitRegistration = async(e) => {
         body: JSON.stringify({
             name: nameInput.value,
             email: emailInput.value,
-            matricNumber: matricNumberInput.value,
-            college: collegeInput.value,
+            matric: matricNumberInput.value,
+            medicalcollege: collegeInput.value,
             password: passwordInput.value,
         })
     });
     
-    registerNimsaiteForm.addEventListener( 'submit' , submitRegistration);
+   
     response = await response.json();
     console.log(response);
     if(response.success){
@@ -104,8 +104,11 @@ console.log("Succesful");
     else if(response.error){
         console.log(error);
     }
-}
+    
 
+}
+ registerNimsaiteForm.addEventListener( 'submit' , submitRegistration);
+ 
 // const registerPartnerForm = document.getElementById("register-partner-form");
 // const nameInputPartner = document.getElementById("name-partner");
 // const emailInputPartner = document.getElementById("email-partner");

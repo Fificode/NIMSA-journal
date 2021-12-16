@@ -179,7 +179,7 @@ border-radius: 5px;}
     cursor: pointer;
     display: block;
     border-radius: 3px;
-    padding: 2px 7px;
+    padding: 2px;
     border: 1px solid #555;
     width: 98%;
     background-color: #fff;
@@ -441,20 +441,18 @@ margin: 50px 20px 70px 50px;
 
        /* Login page */
       
-    .flex-login .row .column-1{
+    .flex-login  .column-1{
      width: 100%;
-}
-.flex-login .row .column-2{
-    display: none;
-}
-.flex-login .row{
-display:flex;
-flex-direction: column;
+     margin-bottom: 80px;
 }
 
-.flex-login .row{
- margin-bottom: 80px;
+.flex-login {
+display:flex;
+justify-content: center;
+align-content: center;
 }
+
+
 
      
 .flex-login .form-container{
@@ -519,7 +517,7 @@ flex-direction: column;
     border: 1px solid #444;
     border-radius: 5px;
 }
-#email-partner, #email-nim{
+#email-partner, #email-nim, #email-login{
    display: block;
     margin: auto ;
     width: 80%;
@@ -531,7 +529,7 @@ flex-direction: column;
     #email-partner:focus, #email-nim:focus, #password-partner:focus, #password-nim:focus, #name-partner:focus, #name-nim:focus, #matric-number-nim:focus, #college-nim:focus{
         outline-color:  #228B22;
     border-radius: 5px;}
-#password-partner, #password-nim{
+#password-partner, #password-nim, #password-login{
     display: block;
     margin: 20px auto;
     width: 80%;
@@ -541,7 +539,7 @@ flex-direction: column;
     border-radius: 5px;
     
 }
-#submit-partner, #submit{
+#submit-partner, #submit, #submit-login{
     padding: 10px 30px;
     border: none;
     color: #fff;
@@ -614,65 +612,8 @@ padding:5px 200px 5px 5px;
     padding-left: 10px;
 }
 
-.prev, .next{
-    cursor: pointer;
-    position: absolute;
-    top: 90%;
-left: 90%;
- margin-top: -25px;
-   font-size: 20px;
-    user-select: none;
-   }
-
-.prev{
-    position: absolute;
-    left: 70%;
-    
-}
-.prev:hover, .next:hover{
-   font-size: 25px;
-}
-
-/* .flex-publish .section-one{
-   display: none;
-}
-.flex-publish .section-two{
-    width: 100%;
-}
-
-
-.flex-publish .trending-heading-publish{
-    height: 50px;
-    width: 100%;
-    border-radius: 2px;
-    background-color: #228B22;
-    color: #fff;
-    margin: 10px 5px;
-}
-.flex-publish .trending-heading-publish h5{
-    font-size: 18px;
-    padding: 5px 8px 2px 8px;
-}
-.flex-publish .trending-heading-publish p{
-    font-size: 12px;
-    padding: 0 0 5px 10px;
-   line-height: 10px;
-}
-.flex-publish .trending-heading h5{
-    font-size: 18px;
-    padding: 5px 8px 2px 8px;
-}
-.flex-publish .trending-heading p{
-    font-size: 12px;
-    padding: 0 0 5px 10px;
-   line-height: 10px;
-}
- */
-
 .flex-publish {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+   
 width: 100%;
 }
 
@@ -752,29 +693,29 @@ width: 100%;
     margin: 20px 5px 10px 5px;
     color: #228B22;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
 }
 .paper-abstract{
     margin: 20px 5px 10px 5px;
-    color: #228B22;
-    font-size: 15px;
+        color: #228B22;
+    font-size: 17px;
     font-weight: bold;
    
 }
 .field-of-research{
-    margin: 0px 5px 15px 5px;
+    margin: 0px 5px 20px 10px;
     color: #228B22;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
 }
 .form-container{
     background-color: #eee;
-    height: 350px;
+    height: 360px;
     margin: 10px;
 }
 .form-container input{
     display: block;
-    width: 98%;
+    width: 97%;
     padding: 5px;
     border: 1px solid #666;
     border-radius: 3px;
@@ -784,9 +725,10 @@ width: 100%;
     outline-color: #228B22;
 }
 #paper-abstract{
-    width: 98%;
+    width: 97%;
     height: 100px;
     border-radius: 3px;
+    padding: 5px;
     margin: 5px;
 }
 #paper-abstract:focus{
@@ -815,16 +757,23 @@ width: 100%;
 #upload-research{
     display: none;
 }
+
 .field-upload{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
-
+.field-upload .container-two{
+    margin: 0 5px 0 30px;
+    
+}
 .plus-square-icon{
     color: #228B22;
-    padding: 0 10px;
+    padding-left: 1px;
+}
+.container-two .upload-research{
+    font-size: 13px;
 }
 .black-bg{
     margin: 100px 0 50px 0;

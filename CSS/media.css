@@ -241,8 +241,17 @@
         height: 200px;
       
     }
+    #paper-abstract{
+        width: 99%;
+       
+    }
+    .form-container input{
+       
+        width: 99%;
+       
+    }
     .field-upload .container-two{
-        margin-right: 30px;
+        margin-right: 10px;
     }
     .black-bg{
         
@@ -317,6 +326,12 @@
     
 
    .flex-publish .section-nimsa-database{
+       width: 100%;
+   }
+   .flex-publish .section-publish-paper{
+       width: 100%;
+   }
+   .flex-publish .section-publish-form{
        width: 100%;
    }
    .img-collection-database{
