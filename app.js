@@ -68,38 +68,62 @@ for (let i = 0; i < menuLength; i++) {
     }
 }
 
-// Slide trend images
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+
+//BACKEND
+const registerNimsaiteForm = document.getElementById("register-nimsaite-form");
+const nameInput = document.getElementById("name-nim");
+const emailInput = document.getElementById("email-nim");
+const matricNumberInput = document.getElementById("matric-number-nim");
+const collegeInput = document.getElementById("college-nim");
+const passwordInput = document.getElementById("password-nim");
+
+
+
+
+const submitRegistration = async(e) => {
+    e.preventDefault();
+    let response = await fetch("http://localhost:8001/register", {
+        method: 'POST',
+      headers: { 'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            name: nameInput.value,
+            email: emailInput.value,
+            matricNumber: matricNumberInput.value,
+            college: collegeInput.value,
+            password: passwordInput.value,
+        })
+    });
+    
+    registerNimsaiteForm.addEventListener( 'submit' , submitRegistration);
+    response = await response.json();
+    console.log(response);
+    if(response.success){
+console.log("Succesful");
+    }
+    else if(response.error){
+        console.log(error);
+    }
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+// const registerPartnerForm = document.getElementById("register-partner-form");
+// const nameInputPartner = document.getElementById("name-partner");
+// const emailInputPartner = document.getElementById("email-partner");
+// const passwordInputPartner = document.getElementById("password-partner");
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("myslide-container");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(
-            "active", "");
+// registerPartnerForm.addEventListener('submit-partner', submitRegistration);
+// const submitRegistration = async(e) => {
+//     e.preventDefault();
+//     let response = await fetch("http://localhost:8001/register", {
+//         method: 'POST',
+//         'Content-Type': 'application/json',
+//         body: JSON.stringify({
+//             name: nameInputPartner.value,
+//             email: emailInputPartner.value,
+//             password: passwordInputPartner.value,
+//     })
+// });
+// response = await response.json();
+// console.log(response);
+// }
 
-    }
-    slides[slideIndex].style.display = "flex";
-    dots[slideIndex - 1].className += " active";
-
-    console.log(slideIndex - 1);
-}

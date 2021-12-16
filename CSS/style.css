@@ -492,7 +492,7 @@ flex-direction: column;
     margin: 5px 0 30px 0;
     font-size: 18px;
 }
-#name{
+#name-partner, #name-nim{
     display: block;
     margin: 20px auto ;
     width: 80%;
@@ -501,7 +501,7 @@ flex-direction: column;
     border: 1px solid #444;
     border-radius: 5px;
 }
-#matric-number{
+#matric-number-nim{
     display: block;
     margin: 20px auto ;
     width: 80%;
@@ -510,7 +510,7 @@ flex-direction: column;
     border: 1px solid #444;
     border-radius: 5px;
 }
-#college{
+#college-nim{
     display: block;
     margin: 20px auto ;
     width: 80%;
@@ -519,7 +519,7 @@ flex-direction: column;
     border: 1px solid #444;
     border-radius: 5px;
 }
-#email{
+#email-partner, #email-nim{
    display: block;
     margin: auto ;
     width: 80%;
@@ -528,10 +528,10 @@ flex-direction: column;
     border: 1px solid #444;
     border-radius: 5px;
     }
-    #email:focus, #password:focus, #name:focus, #matric-number:focus, #college:focus{
+    #email-partner:focus, #email-nim:focus, #password-partner:focus, #password-nim:focus, #name-partner:focus, #name-nim:focus, #matric-number-nim:focus, #college-nim:focus{
         outline-color:  #228B22;
     border-radius: 5px;}
-#password{
+#password-partner, #password-nim{
     display: block;
     margin: 20px auto;
     width: 80%;
@@ -541,7 +541,7 @@ flex-direction: column;
     border-radius: 5px;
     
 }
-#submit{
+#submit-partner, #submit{
     padding: 10px 30px;
     border: none;
     color: #fff;
@@ -632,13 +632,8 @@ left: 90%;
 .prev:hover, .next:hover{
    font-size: 25px;
 }
-.flex-publish{
-    display: flex;
-    flex-direction: column;
-    position: relative;
 
-}
-.flex-publish .section-one{
+/* .flex-publish .section-one{
    display: none;
 }
 .flex-publish .section-two{
@@ -672,9 +667,9 @@ left: 90%;
     padding: 0 0 5px 10px;
    line-height: 10px;
 }
+ */
 
-
-.flex-publish .section-database{
+.flex-publish {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -691,11 +686,11 @@ width: 100%;
 }
 .flex-publish .publish-heading{
     height: 50px;
-    width: 100%;
+    
     border-radius: 2px;
     background-color: #000;
     color: #fff;
-    margin: 10px 5px;
+    margin: 20px 5px;
 }
 .flex-publish .publish-heading h5{
     font-size: 18px;
@@ -728,28 +723,11 @@ width: 100%;
    margin: 25px;
 }
 
-.dot-container{
-    display: none;
-}
-.dot{
-    height: 10px;
-    width: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    
-   
-}
-.active, .dot:hover{
-    background-color: #717171;
-}
-.arrow-container{
-    display: none;
-}
-.section-two .guidelines{
-    height: 310px;
+
+ .guidelines{
+    height: 350px;
     background-color: #eee;
-    
+   
 }
 .guidelines h5{
     margin: 0 5px;

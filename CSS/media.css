@@ -218,15 +218,8 @@
 .container{
     margin-bottom: 100px;
 }
-.prev{
-    position: absolute;
-    left: 90%;
-}
-.next{
-    position: absolute;
-    left: 97%;
-}
-.section-two .guidelines{
+
+ .guidelines{
    margin: 0 5px;
     
 }
@@ -321,110 +314,15 @@
        margin: 20px;
        width: 20%;
     }
-    .dot-container{
-        position:absolute;
-        top: 85%;
-        right: 45%;
-        margin: 0 20px 0 0;
-       display: block;
-   }
-   .arrow-container{
-    display:  block;
-}
-.flex-publish .trending-section{
-    display: flex;
-    flex-direction: row;
-     width: 800px; 
-     height: 400px; 
-    overflow: hidden; 
     
-}
-.flex-publish .myslide-container{
-    display: flex;
-    flex-direction: row;
-}
- .flex-publish .section-one, .section-two{
-    width: 50%; 
-} 
 
-.img-collection-database{
+   .flex-publish .section-nimsa-database{
+       width: 100%;
+   }
+   .img-collection-database{
     display: flex;
    flex-direction: row;
-   }
-   .flex-publish .trending-heading-search{
-    height: 50px;
-    width: 99%;
-    border-radius: 2px;
-    background-color: #228B22;
-    color: #fff;
-    margin: 20px 5px;
+  justify-content: flex-start;
 }
-.flex-publish .trending-heading-search h5{
-    font-size: 18px;
-    padding: 5px 8px 2px 8px;
-}
-.flex-publish .trending-heading-search p{
-    font-size: 12px;
-    padding: 0 0 5px 10px;
-   line-height: 10px;
-}
-   .flex-publish .trending-heading-publish-search{
-    height: 50px;
-    width: 99%;
-    border-radius: 2px;
-    background-color: #228B22;
-    color: #fff;
-    margin: 10px 5px;
-}
-.flex-publish .trending-heading-publish-search h5{
-    font-size: 18px;
-    padding: 5px 8px 2px 8px;
-}
-.flex-publish .trending-heading-publish-search p{
-    font-size: 12px;
-    padding: 0 0 5px 10px;
-   line-height: 10px;
-}
-   
-
-.flex-publish .trending-heading{
-    height: 50px;
-    width: 100%;
-    border-radius: 2px;
-    background-color: #228B22;
-    color: #fff;
-    margin: 10px 5px 10px 5px;
-}
-    .trend-img-container{
-        height: 200px;
-        width: 250px;
-        background-color: #eee;
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-    }
-    .trend-img{
-        width: 200px;
-        height: 150px;
-        margin: 25px;
-    }
-
     
-    .flex-publish .trending-section .mySlides{
-       display: flex;
-        justify-content: center;
-        align-content: center;
-        margin: 20px;
-    }
-   
-   
-    .trend-text{
-        margin: 10px 15px;
-    }
-    
-    
-   
-   
-      }
-
-
+}
