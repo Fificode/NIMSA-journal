@@ -188,6 +188,20 @@ border-radius: 5px;}
     font-size: 15px;
   
 }
+.btn-10{
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    background-color: #228B22;
+ }
+ .btn-11{
+    padding: 10px 30px;
+    color: #228B22;
+    border: 1px solid #228B22;
+    height: 30px;
+    width: 30%;
+    margin-top: 100px;
+}
      .btn-1:hover, .btn-2:hover{
     color:#228B22;
     background-color: #fff;
@@ -912,4 +926,32 @@ color: #fff;
 }
 .subscribe a{
     color: #fff;
+}
+/* User account */
+.user-profile{
+    margin: 80px 20px 20px 20px;
+}
+.my-account{
+
+    margin: 20px 0;
+}
+.profile-container, .professional-container{
+   
+    height: 350px;
+    border: 1px solid #666;
+  
+}
+.professional-container{
+    margin: 0 20px 20px 20px;
+}
+.container-info{
+    margin: 20px 10px;
+}
+.edit-container{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+.btn-11 a{
+    color:#228B22;
 }

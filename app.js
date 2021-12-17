@@ -71,14 +71,13 @@ for (let i = 0; i < menuLength; i++) {
 
 
 //BACKEND
+//SIGNUP AS A NIMSAITE
 const registerNimsaiteForm = document.getElementById("register-nimsaite-form");
 const nameInput = document.getElementById("name-nim");
 const emailInput = document.getElementById("email-nim");
 const matricNumberInput = document.getElementById("matric-number-nim");
 const collegeInput = document.getElementById("college-nim");
 const passwordInput = document.getElementById("password-nim");
-
-
 
 
 const submitRegistration = async(e) => {
@@ -93,8 +92,9 @@ const submitRegistration = async(e) => {
             medicalcollege: collegeInput.value,
             password: passwordInput.value,
         })
+        
     });
-    
+   
    
     response = await response.json();
     console.log(response);
@@ -105,10 +105,12 @@ console.log("Succesful");
         console.log(error);
     }
     
-
+ registerNimsaiteForm.reset();
 }
  registerNimsaiteForm.addEventListener( 'submit' , submitRegistration);
  
+//LOG IN
+
 // const registerPartnerForm = document.getElementById("register-partner-form");
 // const nameInputPartner = document.getElementById("name-partner");
 // const emailInputPartner = document.getElementById("email-partner");
