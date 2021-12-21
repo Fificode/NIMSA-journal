@@ -8,6 +8,7 @@ function toggleVerticalbar() {
         nav.style.display = "none";
     }
 }
+
 // Read More for Editorial Team members
 function myFunctionOne() {
     var dots = document.getElementById("dots-1");
@@ -70,65 +71,7 @@ for (let i = 0; i < menuLength; i++) {
 
 
 
-//BACKEND
-//SIGNUP AS A NIMSAITE
-const registerNimsaiteForm = document.getElementById("register-nimsaite-form");
-const nameInput = document.getElementById("name-nim");
-const emailInput = document.getElementById("email-nim");
-const matricNumberInput = document.getElementById("matric-number-nim");
-const collegeInput = document.getElementById("college-nim");
-const passwordInput = document.getElementById("password-nim");
 
-
-const submitRegistration = async(e) => {
-    e.preventDefault();
-    let response = await fetch("http://localhost:8001/register", {
-        method: 'POST',
-      headers: { 'Content-Type': 'application/json'},
-        body: JSON.stringify({
-            name: nameInput.value,
-            email: emailInput.value,
-            matric: matricNumberInput.value,
-            medicalcollege: collegeInput.value,
-            password: passwordInput.value,
-        })
-        
-    });
    
-   
-    response = await response.json();
-    console.log(response);
-    if(response.success){
-console.log("Succesful");
-    }
-    else if(response.error){
-        console.log(error);
-    }
-    
- registerNimsaiteForm.reset();
-}
- registerNimsaiteForm.addEventListener( 'submit' , submitRegistration);
- 
-//LOG IN
 
-// const registerPartnerForm = document.getElementById("register-partner-form");
-// const nameInputPartner = document.getElementById("name-partner");
-// const emailInputPartner = document.getElementById("email-partner");
-// const passwordInputPartner = document.getElementById("password-partner");
-
-// registerPartnerForm.addEventListener('submit-partner', submitRegistration);
-// const submitRegistration = async(e) => {
-//     e.preventDefault();
-//     let response = await fetch("http://localhost:8001/register", {
-//         method: 'POST',
-//         'Content-Type': 'application/json',
-//         body: JSON.stringify({
-//             name: nameInputPartner.value,
-//             email: emailInputPartner.value,
-//             password: passwordInputPartner.value,
-//     })
-// });
-// response = await response.json();
-// console.log(response);
-// }
 

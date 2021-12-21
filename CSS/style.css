@@ -553,7 +553,7 @@ align-content: center;
     border-radius: 5px;
     
 }
-#submit-partner, #submit, #submit-login{
+ #submit, #submit-login{
     padding: 10px 30px;
     border: none;
     color: #fff;
